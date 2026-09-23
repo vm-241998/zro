@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Apple | ZRØ</title>
+    <meta name="description" content="ZRØ premium non-alcoholic brew. Zero alcohol. Maximum vibe.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="container nav-inner">
+            <a href="index.html"><img class="logo" src="logo-1.png" alt="ZRØ"></a>
+            <nav class="nav-links">
+                <a class="" href="index.html">Home</a>
+                <a class="" href="products.html">Products</a>
+                <a class="" href="index.html#story">Our Story</a>
+                <a class="" href="index.html#lifestyle">Lifestyle</a>
+                <a class="" href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a class="btn btn-fill" href="products.html">Explore ZRØ</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-hero">
+            <div class="container product-layout">
+                <div class="product-image"><img src="apple.png" alt="ZRØ product collection"></div>
+                <div>
+                    <div class="kicker">Single Product</div>
+                    <h1 style="font-size:clamp(54px,7vw,94px)"> ZRØ <span id="productName">Apple</span></h1>
+                    <p class="copy">Premium non-alcoholic brew concept with a smooth malt-led profile. This page is
+                        designed as the product-detail template for each ZRØ SKU.</p>
+                    <div class="specs">
+                        <div class="spec"><small>Alcohol</small><b>0.0%</b></div>   
+                        <div class="spec"><small>Format</small><b>330 ml</b></div>
+                        <div class="spec"><small>Category</small><b>Non-Alcoholic Brew</b></div>
+                        <div class="spec"><small>Serve</small><b>Chilled</b></div>
+                    </div>
+                    <a class="btn btn-fill" href="contact.html">Enquire for distribution</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const params = new URLSearchParams(location.search);
+        const map = { classic: 'Classic', strong: 'Strong', ice: 'Ice', apple: 'Apple', dark: 'Dark', lager: 'Premium Lager' };
+        const key = params.get('name') || 'apple';
+        document.getElementById('productName').textContent = map[key] || 'Apple';
+    </script>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <img class="logo" src="logo-1.png" alt="ZRØ">
+                <p>Premium non-alcoholic brew crafted for modern moments.</p>
+            </div>
+            <div>
+                <h3>Explore</h3><a href="products.html">Product Range</a><br><a href="events.html">One Sip
+                    Events</a><br><a href="index.html#story">Our Story</a>
+            </div>
+            <div>
+                <h3>Company</h3><a href="contact.html">Contact Us</a><br><a href="privacy.html">Privacy</a><br><a
+                    href="terms.html">Terms</a>
+            </div>
+            <div>
+                <h3>Zaikajaroori</h3>
+                <p>ZRØ is a premium beverage concept from the Zaikajaroori food & beverage ecosystem.</p>
+            </div>
+        </div>
+        <div class="container legal"><span>© <span data-year></span> Zaikajaroori Food & Beverage Pvt.
+                Ltd.</span><span>ZRØ · PREMIUM NON-ALCOHOLIC BREW</span></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
