@@ -259,6 +259,12 @@ h2 span {
     text-transform: uppercase
 }
 
+.center-btn-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px
+}
+
 .story {
     display: grid;
     grid-template-columns: 1fr 1fr;
